@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ProyBackEndApp',
+    'ProyBackEndApp',  # Asegúrate de que tu app está registrada aquí
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -76,10 +77,11 @@ WSGI_APPLICATION = 'ProyBackEnd.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3',  # Motor de la base de datos (en este caso, SQLite)
+        'NAME': BASE_DIR / 'm_maestros.sqlite3',  # Nombre de la base de datos
     }
 }
+
 
 
 # Password validation
